@@ -3,11 +3,22 @@
     align-items: center;
 }
 
+.main-container {
+    max-width: 650px;
+}
+
+.details-menu {
+    list-style: none;
+}
+
+.details-menu::-webkit-details-marker {
+    display: none;
+}
+
 /* Secondo gemini questi sono i font usati dal sito*/
 h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
-    text-transform: uppercase; /* Spesso i giornali usano il maiuscolo per le sezioni */
 }
 
 body {
