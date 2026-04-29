@@ -9,6 +9,7 @@
 
 .details-menu {
     list-style: none;
+    margin: 15px;
 }
 
 .details-menu::-webkit-details-marker {
