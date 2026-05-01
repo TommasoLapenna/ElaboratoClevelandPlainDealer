@@ -1,0 +1,97 @@
+.top__bar{}
+
+.top__bar-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top__bar-title {
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large;
+}
+
+.top__bar-button {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+}
+
+#subscribe-button {
+    background-color:  rgb(159, 196, 173);
+}
+
+#subscribe-button:hover {
+    background-color: rgb(177, 216, 190);
+}
+
+#dropdown-button:hover {
+    background-color: #e3e3e3;
+}
+
+.main__container {
+    max-width: 1000px;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+}
+
+.main__container h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.main__container h3 {
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.main__ad-horizontal{}
+
+.bottom__container {
+    font-family: 'arial', serif;
+    font-size: 15px;
+}
+
+.bottom__details-menu {
+    list-style: none;
+    margin: 15px;
+}
+
+.bottom__details-menu summary {
+    margin-bottom: 8px;
+    /* This removes the summary default arrow  icon */
+    list-style: none;
+    &::marker { content: ""; }
+    &::-webkit-details-marker {
+        display: none;
+    }
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.bottom__details-menu li {
+    font-weight: lighter;
+    color: rgb(102, 102, 102);
+}
+
+.bottom__footer {
+    max-width: 1000px;
+    font-family: Inter, Arial, sans-serif;
+}
+
+.bottom__footer p {
+    color: rgb(102, 102, 102);
+}
+
+.bottom__user-info {
+    max-width: 1000px;
+}
+
+.bottom__user-info a {
+    color: rgb(102, 102, 102);
+}
+
+
