@@ -1,19 +1,20 @@
 .news_image {
-    width: 150px;
+    /*width: 150px;
     align-items: center;
+     */
 }
 
 .main-container {
-    max-width: 650px;
+   max-width: 1000px;
+}
+
+.bottom-container {
+    max-width: 1000px;
 }
 
 .details-menu {
     list-style: none;
     margin: 15px;
-}
-
-.details-menu::-webkit-details-marker {
-    display: none;
 }
 
 /* Secondo gemini questi sono i font usati dal sito*/
@@ -26,4 +27,30 @@ body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Remove default disclosure arrow from all <summary> elements */
+summary {
+    /* Remove default list-style arrow (Firefox) */
+    list-style: none;
+
+    /* Remove default marker (modern spec) */
+    &::marker { content: ""; }
+
+    /* Remove WebKit arrow (Chrome, Safari, Edge) */
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Optional: Reset default padding */
+    padding-left: 0;
+    margin: 0;
+
+    /* Optional: make it look clickable */
+    cursor: pointer;
+}
+
+/* Ensure details remains block (usually inherited, but be safe) */
+details {
+    display: block;
 }
