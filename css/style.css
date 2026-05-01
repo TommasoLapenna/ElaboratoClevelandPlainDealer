@@ -49,8 +49,3 @@ summary {
     /* Optional: make it look clickable */
     cursor: pointer;
 }
-
-/* Ensure details remains block (usually inherited, but be safe) */
-details {
-    display: block;
-}
