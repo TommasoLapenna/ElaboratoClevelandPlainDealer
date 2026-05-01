@@ -1,6 +1,6 @@
-var prevScrollPosition = window.pageYOffset;
+let prevScrollPosition = window.pageYOffset;
 window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     if (prevScrollPosition > currentScrollPos) {
         document.getElementById("nav-container").style.top = "0";
     } else {
