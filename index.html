@@ -16,19 +16,20 @@
 </head>
 <body>
 
-<header class="top__bar bg-white">
-    <nav class="container-fluid container-xxl mx-auto m-2 p-3">
+<script src="index.js"></script>
+<div id="nav-container" class="top__bar bg-white">
+    <nav class="container-fluid container-xxl mx-auto m-1 p-2">
         <div class="row">
-            <div class="col-md col-1 d-flex justify-content-start align-items-center gap-2">
-                <button id="search-button" class="bi bi-search"></button>
-                <p class="m-0 d-none d-md-block top__bar-text"> Set Weather </p>
+            <div class="col-md col-1 d-flex justify-content-start align-items-center">
+                <button id="search-button" class="bg-white border-0" aria-label="Search"><i class="bi bi-search bg-white border-0" style="font-size: xx-large"></i></button>
+                <button id="weather-button" class="rounded-5 top__bar-text top__bar-button d-none d-md-block "> Set Weather </button>
             </div>
             <div class="col-md col-1 d-flex align-items-center justify-content-start justify-content-md-center gap-1">
                 <img width="50" height="50" alt="C logo" src="images/logo.svg">
                 <h1 class="m-0 d-none d-md-block top__bar-title">cleveland.com</h1>
             </div>
             <div class="col-md col-10 justify-content-end d-flex align-items-center gap-2">
-                <button id="subscribe-button" class="rounded-5 border-black top__bar-text top__bar-button"> Subscribe</button>
+                <button id="subscribe-button" class="rounded-5 top__bar-text top__bar-button"> Subscribe</button>
                 <div class="dropdown">
                     <button id="dropdown-button" class="btn rounded-5 dropdown-toggle top__bar-text top__bar-button" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -46,12 +47,12 @@
             </div>
         </div>
     </nav>
-</header>
+</div>
 
 <main class="container main__container my-3">
-    <section class="row border m-2 main__ad-horizontal">
+    <aside class="row border m-2 main__container-ad d-none d-md-block">
         <p> ADS <br></p>
-    </section>
+    </aside>
     <header class="mb-4">
         <h2> The Plain Dealer</h2>
     </header>
@@ -140,9 +141,9 @@
         </div>
 
 
-        <div class="col-md-4 d-none d-md-block border">
+        <aside class="col-md-4 d-none d-md-block border main__container-ad">
             <p> ADS</p>
-        </div>
+        </aside>
     </div>
 
     <footer><a href="#"> The Plain Dealer Achives</a></footer>

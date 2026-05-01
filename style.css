@@ -3,7 +3,7 @@
 .top__bar-text{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .top__bar-title {
@@ -27,6 +27,14 @@
     background-color: rgb(177, 216, 190);
 }
 
+#weather-button {
+    background-color: white;
+}
+
+#weather-button:hover{
+    background-color: #e3e3e3;
+}
+
 #dropdown-button:hover {
     background-color: #e3e3e3;
 }
@@ -48,7 +56,7 @@
     font-weight: bold;
 }
 
-.main__ad-horizontal{}
+.main__container-ad {}
 
 .bottom__container {
     font-family: 'arial', serif;
