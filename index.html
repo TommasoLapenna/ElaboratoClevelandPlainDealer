@@ -16,29 +16,28 @@
 </head>
 <body>
 
-<header class="bg-white">
+<header class="top__bar bg-white">
     <nav class="container-fluid container-xxl mx-auto m-2 p-2">
         <div class="row">
             <div class="col-md col-1 d-flex justify-content-start align-items-center gap-2">
-                <button class="bi bi-search"></button>
-                <p class="m-0 d-none d-md-block"> Set Weather </p>
+                <button id="search-button" class="bi bi-search"></button>
+                <p class="m-0 d-none d-md-block top__bar-text"> Set Weather </p>
             </div>
             <div class="col-md col-1 d-flex align-items-center justify-content-start justify-content-md-center gap-1">
                 <img width="50" height="50" alt="C logo" src="images/logo.svg">
-                <h1 class="m-0 d-none d-md-block">Cleveland.com</h1>
+                <h1 class="m-0 d-none d-md-block top__bar-title">cleveland.com</h1>
             </div>
             <div class="col-md col-10 justify-content-end d-flex align-items-center gap-2">
-                <button class="rounded-5 border-black"> Start For 1$</button>
+                <button id="start-button" class="rounded-5 border-black top__bar-text"> Start For 1$</button>
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn dropdown-toggle top__bar-text" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                         Sign In
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profilo</a></li>
                         <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                        <li></li>
                         <li><a class="dropdown-item" href="#">Esci</a></li>
                     </ul>
                 </div>
@@ -47,14 +46,17 @@
     </nav>
 </header>
 
-<main class="container main-container my-3">
+<main class="container main__container my-3">
+    <section class="row border m-2 main__ad-horizontal">
+        <p> ADS <br></p>
+    </section>
     <header>
         <h2> The Plain Dealer</h2>
     </header>
     <div class="row m-1">
         <div class="col-12 col-md-8">
             <section class="row">
-                <article class="col-12 my-2 my-lg-0 col-sm-6 col-md-12 col-lg-6">
+                <article class="col-12 my-2 my-lg-0 col-sm-6 col-md-12 col-lg-6 my-3">
                     <!-- The media query min-width are the same as the correspondent breakpoint in bootstrap -->
                     <picture class="d-flex justify-content-center">
                         <source srcset="https://placehold.co/300x180" media="(min-width: 992px)">
@@ -62,19 +64,19 @@
                         <source srcset="https://placehold.co/360x200" media="(min-width: 576px)">
                         <img src="https://placehold.co/440x270" class="img-fluid rounded" alt="Article Picture">
                     </picture>
-                    <p class="my-1">Metro</p>
+                    <p class="my-1">METRO</p>
                     <h3>The Plain Dealer's front page for January 2, 2026</h3>
                     <time datetime="2026-01-02">1h ago</time>
                     <a href="#"> author</a>
                 </article>
-                <article class="col-12 my-2 my-md-0 col-sm-6 col-md-12 col-lg-6">
+                <article class="col-12 my-2 my-md-0 col-sm-6 col-md-12 col-lg-6 my-3">
                     <picture class="d-flex justify-content-center">
                         <source srcset="https://placehold.co/300x180" media="(min-width: 992px)">
                         <source srcset="https://placehold.co/470x300" media="(min-width: 768px)">
                         <source srcset="https://placehold.co/360x200" media="(min-width: 576px)">
                         <img src="https://placehold.co/440x270" class="img-fluid rounded" alt="Article Picture">
                     </picture>
-                    <p class="my-1">Metro</p>
+                    <p class="my-1">METRO</p>
                     <h3>The Plain Dealer's front page for January 1, 2026</h3>
                     <time datetime="2026-01-01">1 day ago</time>
                     <a href="#"> author</a>
@@ -141,20 +143,19 @@
         </div>
     </div>
 
-
     <footer><a href="#"> The Plain Dealer Achives</a></footer>
 </main>
 
 <hr class="mt-5">
 
 <!-- Bottom Section -->
-<div class="container bottom-container ">
+<nav class="container bottom__container m-">
     <div class="row">
         <div class="col-sm-auto"></div>
         <div class="container col">
             <div class="row">
                 <div class="col-12 col-lg mb-3 p-0">
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b> About Us </b></summary>
                         <ul class="list-unstyled">
                             <li> Advertise With Us</li>
@@ -168,7 +169,7 @@
                         </ul>
                     </details>
 
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Subscription</b></summary>
                         <ul class="list-unstyled">
                             <li> cleveland.com</li>
@@ -180,7 +181,7 @@
                 </div>
 
                 <div class="col-12 col-lg mb-3 p-0">
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Already a Subscriber</b></summary>
                         <ul class="list-unstyled">
                             <li> Make a Payment</li>
@@ -192,7 +193,7 @@
                 </div>
 
                 <div class="col-12 col-lg mb-3 p-0">
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Cleveland.com Sections</b></summary>
                         <ul class="list-unstyled">
                             <li> All News</li>
@@ -219,15 +220,15 @@
         <div class="container col">
             <div class="row">
 
-                <div class="col-12 col-lg p-0">
-                    <details class="details-menu" open>
+                <div class="col-12 col-lg p-0 mb-3">
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Mobile</b></summary>
                         <ul class="list-unstyled">
                             <li> Mobile Apps</li>
                         </ul>
                     </details>
 
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Your Regional News Pages</b></summary>
                         <ul class="list-unstyled">
                             <li> Lakewood</li>
@@ -240,8 +241,8 @@
                     </details>
                 </div>
 
-                <div class="col-12 col-lg p-0">
-                    <details class="details-menu" open>
+                <div class="col-12 col-lg p-0 mb-3">
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>More on Cleveland.com</b></summary>
                         <ul class="list-unstyled">
                             <li> Sponsor Content</li>
@@ -255,7 +256,7 @@
                         </ul>
                     </details>
 
-                    <details class="details-menu" open>
+                    <details class="bottom__details-menu" open>
                         <summary class=""><b>Follow Us</b></summary>
                         <ul class="list-unstyled">
                             <li> Twitter</li>
@@ -270,10 +271,13 @@
         </div>
         <div class="col-sm-auto"></div>
     </div>
-</div>
+</nav>
+
+<div class="container mt-5 mx-1 bottom__user-info"><a href="#"> Privacy Policy</a> | <a href="#"> User Agreement</a> | <a href="#"> Ad Choices </a></div>
 
 <hr>
-<footer class="container p-3">
+
+<footer class="container p-3 m-1 bottom__footer">
     <h3> ADVANCELOCAL</h3>
     <p>Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement, (updated
         8/1/2024) and acknowledgement of our Privacy Policy, and Your Privacy Choices and Rights (updated 1/1/2026).</p>
