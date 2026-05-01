@@ -1,4 +1,8 @@
-.top__bar{}
+#nav-container {
+    transition: top 0.3s;
+}
+
+.top__bar {}
 
 .top__bar-text{
     font-family: 'Inter', sans-serif;
