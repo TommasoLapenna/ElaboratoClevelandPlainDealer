@@ -18,23 +18,26 @@
 <body>
 
 
-<nav id="nav-container" class="container-fluid container-xxl mx-2 mx-xxl-auto py-2 top__bar fixed-top bg-white top__bar-text">
+<nav id="nav-container"
+     class="container-fluid container-xxl mx-0 mx-xxl-auto py-2 top__bar fixed-top bg-white top__bar-text">
     <div class="row g-0">
-        <div class="col-md col-1 d-flex justify-content-start align-items-center">
+        <div class="col-md col-1 d-flex justify-content-start align-items-center gap-2">
             <button id="search-button" class="btn bg-white border-0 p-1" aria-label="Search"
                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-search bg-white border-0" style="font-size: xx-large"></i>
+                <i class="bi bi-search bg-white border-0" style="font-size: x-large"></i>
             </button>
             <section class="dropdown-menu container-fluid rounded-0 shadow border-0  top__bar-menu p-4">
                 <div class="row">
-                    <button id="smart-search-button" class="rounded-5 top__bar-text top__bar-button"><i class="bi bi-search-heart m-1"></i>Smart Search </button>
+                    <button id="smart-search-button" class="rounded-5 top__bar-text top__bar-button"><i
+                            class="bi bi-search-heart m-1"></i>Smart Search
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 col-xl">
                         <ul class="list-unstyled">
                             <li> FORECAST</li>
-                            <li> Set Weather Location </li>
-                            <li> Weather </li>
+                            <li> Set Weather Location</li>
+                            <li> Weather</li>
                         </ul>
                     </div>
 
@@ -106,38 +109,43 @@
 
             </section>
 
-            <button id="weather-button" class="btn rounded-5 top__bar-text top__bar-button d-none d-md-block dropdown-toggle" aria-label="Weather" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Set Weather</button>
+            <button id="weather-button"
+                    class="btn rounded-5 top__bar-text top__bar-button d-none d-md-block dropdown-toggle"
+                    aria-label="Weather" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Set Weather
+            </button>
             <section class="dropdown-menu top__bar-weather rounded-0 shadow border-0 p-4">
                 <h5> Set Weather Location</h5>
                 <form>
-                        <input type="text" class="form-control rounded-0 custom-search-input" placeholder="Enter zip code or city and state" aria-label="Location search">
+                    <input type="text" class="form-control rounded-0 custom-search-input"
+                           placeholder="Enter zip code or city and state" aria-label="Location search">
                 </form>
-                <button id="location-button" class="btn rounded-5 top__bar-text top__bar-button my-3"> Set Location</button>
+                <button id="location-button" class="btn rounded-5 top__bar-text top__bar-button my-3"> Set Location
+                </button>
             </section>
         </div>
 
         <div class="col-md col-1 d-flex align-items-center justify-content-start justify-content-md-center gap-1">
-            <img width="50" height="50" alt="C logo" src="images/logo.svg">
+            <img width="40" height="40" alt="C logo" src="images/logo.svg">
             <h1 class="m-0 d-none d-md-block top__bar-title">cleveland.com</h1>
         </div>
+
         <div class="col-md col-10 justify-content-end d-flex align-items-center gap-2">
             <button id="subscribe-button" class="rounded-5 top__bar-text top__bar-button"> Subscribe</button>
-            <div class="dropdown">
-                <button id="dropdown-button" class="btn rounded-5 dropdown-toggle top__bar-text top__bar-button"
-                        type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                    Sign In
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow border-0 my-2 p-4">
-                    <li><a class="dropdown-item mx-0 my-3 " href="#">Sign in</a></li>
-                    <li><a class="dropdown-item mx-0 my-3 " href="#">Create Account</a></li>
-                    <li><a class="dropdown-item mx-0 my-3" href="#">Newsletter</a></li>
-                    <li><a class="dropdown-item mx-0 my-3" href="#">Custom Alerts</a></li>
-                    <li><a class="dropdown-item mx-0 my-3" href="#">Newspaper.com Archive</a></li>
-                    <li><a class="dropdown-item mx-0 my-3" href="#">Help/FAQ</a></li>
-                </ul>
-            </div>
+            <button id="dropdown-button" class="btn rounded-5 dropdown-toggle top__bar-text top__bar-button "
+                    type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                Sign In
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow border-0 my-2 p-4">
+                <li><a class="dropdown-item mx-0 my-3 " href="#">Sign in</a></li>
+                <li><a class="dropdown-item mx-0 my-3 " href="#">Create Account</a></li>
+                <li><a class="dropdown-item mx-0 my-3" href="#">Newsletter</a></li>
+                <li><a class="dropdown-item mx-0 my-3" href="#">Custom Alerts</a></li>
+                <li><a class="dropdown-item mx-0 my-3" href="#">Newspaper.com Archive</a></li>
+                <li><a class="dropdown-item mx-0 my-3" href="#">Help/FAQ</a></li>
+            </ul>
         </div>
+
     </div>
 </nav>
 
@@ -374,15 +382,18 @@
     </div>
 </nav>
 
-<div class="container mt-5 mx-1  mt-0 mb-1 bottom__user-info"><a href="#"> Privacy Policy</a> | <a href="#"> User Agreement</a> |
+<div class="container mt-5 mx-1  mt-0 mb-1 bottom__user-info"><a href="#"> Privacy Policy</a> | <a href="#"> User
+    Agreement</a> |
     <a href="#"> Ad Choices </a></div>
 
 <hr class="mb-0">
 
 <footer class="container p-3 mx-1  bottom__footer mx-auto">
     <img src="images/advance-logo.png" alt="AdvanceLocal logo" width="250" height="30" class="mb-4 mt-0">
-    <p>Use of and/or registration on any portion of this site constitutes acceptance of our <a href="#">User Agreement</a>, (updated
-        8/1/2024) and acknowledgement of our <a href="#">Privacy Policy</a>, and <a href="#">Your Privacy Choices and Rights</a> (updated 1/1/2026).</p>
+    <p>Use of and/or registration on any portion of this site constitutes acceptance of our <a href="#">User
+        Agreement</a>, (updated
+        8/1/2024) and acknowledgement of our <a href="#">Privacy Policy</a>, and <a href="#">Your Privacy Choices and
+            Rights</a> (updated 1/1/2026).</p>
     <p>
         © 2026 Advance Local Media LLC. All rights reserved (<a href="#">About Us</a>).
         <br> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except
@@ -391,7 +402,8 @@
         <a href="#">Community Rules</a> apply to all content you upload or otherwise submit to this site.
     </p>
     <p>
-        <b>YouTube's privacy policy</b> is available <a href="#">here</a> and <b>YouTube's terms of service</b> is available <a href="#">here</a>.
+        <b>YouTube's privacy policy</b> is available <a href="#">here</a> and <b>YouTube's terms of service</b> is
+        available <a href="#">here</a>.
     </p>
     <p>
         <a href="#">Ad Choices</a>
