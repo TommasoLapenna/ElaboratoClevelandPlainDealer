@@ -1,12 +1,11 @@
-console.log("Hello World!");
-
-let prevScrollPosition = window.pageYOffset;
+// Hide-on-scroll top bar
+let prevScrollPosition = window.scrollY;
 window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.scrollY;
     if (prevScrollPosition > currentScrollPos) {
         document.getElementById("nav-container").style.top = "0";
     } else {
-        document.getElementById("nav-container").style.top = "-50px";
+        document.getElementById("nav-container").style.top = "-60px";
     }
     prevScrollPosition = currentScrollPos;
 }

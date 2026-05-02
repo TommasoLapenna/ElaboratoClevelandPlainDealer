@@ -11,21 +11,111 @@
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="images/logo.svg">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
 
-<nav id="nav-container" class="container-fluid container-xxl mx-auto mx-1 p-2 top__bar fixed-top bg-white">
-    <div class="row">
+<nav id="nav-container" class="container-fluid container-xxl mx-2 mx-xxl-auto py-2 top__bar fixed-top bg-white top__bar-text">
+    <div class="row g-0">
         <div class="col-md col-1 d-flex justify-content-start align-items-center">
-            <button id="search-button" class="bg-white border-0" aria-label="Search"><i
-                    class="bi bi-search bg-white border-0" style="font-size: xx-large"></i></button>
-            <button id="weather-button" class="rounded-5 top__bar-text top__bar-button d-none d-md-block "> Set
-                Weather
+            <button id="search-button" class="btn bg-white border-0 p-1" aria-label="Search"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-search bg-white border-0" style="font-size: xx-large"></i>
             </button>
+            <section class="dropdown-menu container-fluid rounded-0 shadow border-0  top__bar-menu p-4">
+                <div class="row">
+                    <button id="smart-search-button" class="rounded-5 top__bar-text top__bar-button"><i class="bi bi-search-heart m-1"></i>Smart Search </button>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> FORECAST</li>
+                            <li> Set Weather Location </li>
+                            <li> Weather </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> TOP STORIES</li>
+                            <li> News</li>
+                            <li> Sport</li>
+                            <li> Life</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> FEATURED</li>
+                            <li> Shopping</li>
+                            <li> Crossword & Puzzles</li>
+                            <li> Comics</li>
+                            <li> Online Newspaper</li>
+                            <li> Obituaries</li>
+                            <li> Newspapers.com Archive</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> GAMING</li>
+                            <li> Lottery</li>
+                            <li> Sport Betting</li>
+                            <li> Sweepstakes Casinos</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> SECTIONS</li>
+                            <li> News</li>
+                            <li> Politics & Elections</li>
+                            <li> Local News</li>
+                            <li> Sport</li>
+                            <li> Entertainment</li>
+                            <li> Business</li>
+                            <li> Opinion</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> SERVICES</li>
+                            <li> Jobs</li>
+                            <li> Autos</li>
+                            <li> Public Notices</li>
+                            <li> Real Estate News</li>
+                            <li> Classified</li>
+                            <li> Advertise With Us</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl">
+                        <ul class="list-unstyled">
+                            <li> MORE ON CLEVELAND.COM</li>
+                            <li> Email Newsletters</li>
+                            <li> Advance Ohio Events</li>
+                            <li> Podcasts</li>
+                            <li> Follow Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <button id="weather-button" class="btn rounded-5 top__bar-text top__bar-button d-none d-md-block dropdown-toggle" aria-label="Weather" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Set Weather</button>
+            <section class="dropdown-menu top__bar-weather rounded-0 shadow border-0 p-4">
+                <h5> Set Weather Location</h5>
+                <form>
+                        <input type="text" class="form-control rounded-0 custom-search-input" placeholder="Enter zip code or city and state" aria-label="Location search">
+                </form>
+                <button id="location-button" class="btn rounded-5 top__bar-text top__bar-button my-3"> Set Location</button>
+            </section>
         </div>
+
         <div class="col-md col-1 d-flex align-items-center justify-content-start justify-content-md-center gap-1">
             <img width="50" height="50" alt="C logo" src="images/logo.svg">
             <h1 class="m-0 d-none d-md-block top__bar-title">cleveland.com</h1>
@@ -53,17 +143,17 @@
 
 
 <main class="container main__container my-3">
-    <aside class="row border m-2 main__container-ad d-none d-md-block">
-        <p> ADS <br></p>
+    <aside class="row border main__container-ad-horizontal">
+        <p> ADS <br><br><br><br></p>
     </aside>
-    <header class="mb-4">
+    <header class="my-4">
         <h2> The Plain Dealer</h2>
     </header>
     <div class="row m-1">
         <div class="col-12 col-md-8">
             <section class="row">
                 <article class="col-12 my-2 my-lg-0 col-sm-6 col-md-12 col-lg-6 my-3">
-                    <!-- The media query min-width are the same as the correspondent breakpoint in bootstrap -->
+                    <!-- The media query min-widths are the same as the correspondent breakpoint in bootstrap -->
                     <picture class="d-flex justify-content-center">
                         <source srcset="https://placehold.co/300x180" media="(min-width: 992px)">
                         <source srcset="https://placehold.co/470x300" media="(min-width: 768px)">
@@ -72,7 +162,7 @@
                     </picture>
                     <p class="my-1">METRO</p>
                     <h3>The Plain Dealer's front page for January 2, 2026</h3>
-                    <time datetime="2026-01-02">1h ago</time>
+                    <time datetime="2026-01-02T10:00:00">1h ago</time>
                     <a href="#"> author</a>
                 </article>
                 <article class="col-12 my-2 my-md-0 col-sm-6 col-md-12 col-lg-6 my-3">
@@ -84,7 +174,7 @@
                     </picture>
                     <p class="my-1">METRO</p>
                     <h3>The Plain Dealer's front page for January 1, 2026</h3>
-                    <time datetime="2026-01-01">1 day ago</time>
+                    <time datetime="2026-01-01T10:00:00">1 day ago</time>
                     <a href="#"> author</a>
                 </article>
             </section>
@@ -101,7 +191,7 @@
                     <h3 class="my-2"> The Plain Dealer's front page for December 31, 2025</h3>
                     <p> Cleveland Plain Dealer front page for 12/31/2025. Please send new tips, story suggestions and
                         coverage to place@holder.com</p>
-                    <time datetime="2025-12-31">3 day ago</time>
+                    <time datetime="2025-12-31T10:00:00">3 day ago</time>
                     <a href="#"> author</a>
                 </div>
             </article>
@@ -118,7 +208,7 @@
                     <h3 class="my-2"> The Plain Dealer's front page for December 31, 2025</h3>
                     <p> Cleveland Plain Dealer front page for 12/31/2025. Please send new tips, story suggestions and
                         coverage to place@holder.com</p>
-                    <time datetime="2025-12-31">3 day ago</time>
+                    <time datetime="2025-12-31T10:00:00">3 day ago</time>
                     <a href="#"> author</a>
                 </div>
             </article>
@@ -135,7 +225,7 @@
                     <h3 class="my-2"> The Plain Dealer's front page for December 31, 2025</h3>
                     <p> Cleveland Plain Dealer front page for 12/31/2025. Please send new tips, story suggestions and
                         coverage to place@holder.com</p>
-                    <time datetime="2025-12-31">3 day ago</time>
+                    <time datetime="2025-12-31T10:00:00">3 day ago</time>
                     <a href="#"> author</a>
                 </div>
             </article>
@@ -143,8 +233,13 @@
             <hr class="my-3">
         </div>
 
+        <!--
+        =================
+        The articles all have the same structure, for simplicity only three were added
+        =================
+        -->
 
-        <aside class="col-md-4 d-none d-md-block border main__container-ad">
+        <aside class="col-md-4 d-none d-md-block border main__container-ad-vertical">
             <p> ADS</p>
         </aside>
     </div>
@@ -206,7 +301,7 @@
                             <li> All Sport</li>
                             <li> All Entertainment</li>
                             <li> Politics</li>
-                            <li> All Opinion</li>
+                            <li> All Opinions</li>
                             <li> Living</li>
                             <li> Sport Betting News & Promos</li>
                             <li> Rentals</li>
@@ -279,24 +374,27 @@
     </div>
 </nav>
 
-<div class="container mt-5 mx-1 bottom__user-info"><a href="#"> Privacy Policy</a> | <a href="#"> User Agreement</a> |
+<div class="container mt-5 mx-1  mt-0 mb-1 bottom__user-info"><a href="#"> Privacy Policy</a> | <a href="#"> User Agreement</a> |
     <a href="#"> Ad Choices </a></div>
 
-<hr>
+<hr class="mb-0">
 
-<footer class="container p-3 m-1 bottom__footer">
-    <h3> ADVANCELOCAL</h3>
-    <p>Use of and/or registration on any portion of this site constitutes acceptance of our User Agreement, (updated
-        8/1/2024) and acknowledgement of our Privacy Policy, and Your Privacy Choices and Rights (updated 1/1/2026).</p>
+<footer class="container p-3 mx-1  bottom__footer mx-auto">
+    <img src="images/advance-logo.png" alt="AdvanceLocal logo" width="250" height="30" class="mb-4 mt-0">
+    <p>Use of and/or registration on any portion of this site constitutes acceptance of our <a href="#">User Agreement</a>, (updated
+        8/1/2024) and acknowledgement of our <a href="#">Privacy Policy</a>, and <a href="#">Your Privacy Choices and Rights</a> (updated 1/1/2026).</p>
     <p>
-        © 2026 Advance Local Media LLC. All rights reserved (About Us).
+        © 2026 Advance Local Media LLC. All rights reserved (<a href="#">About Us</a>).
         <br> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except
         with the prior written permission of Advance Local.</p>
     <p>
-        Community Rules apply to all content you upload or otherwise submit to this site.
+        <a href="#">Community Rules</a> apply to all content you upload or otherwise submit to this site.
     </p>
     <p>
-        YouTube's privacy policy is available here and YouTube's terms of service is available here.
+        <b>YouTube's privacy policy</b> is available <a href="#">here</a> and <b>YouTube's terms of service</b> is available <a href="#">here</a>.
+    </p>
+    <p>
+        <a href="#">Ad Choices</a>
     </p>
 </footer>
 

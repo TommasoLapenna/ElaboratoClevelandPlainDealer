@@ -2,7 +2,8 @@
     transition: top 0.3s;
 }
 
-.top__bar {}
+.top__bar {
+}
 
 .top__bar-text{
     font-family: 'Inter', sans-serif;
@@ -13,6 +14,7 @@
 .top__bar-title {
     font-family: 'Inter', sans-serif;
     font-size: xx-large;
+    font-weight: 400;
 }
 
 .top__bar-button {
@@ -22,6 +24,31 @@
     padding-bottom: 10px;
     border: 0;
 }
+
+.top__bar-menu {
+    padding: 10px 20px 10px 10px;
+    font-size: small;
+}
+
+.top__bar-menu li + li {
+    color: rgb(102, 102, 102);
+    font-weight: 400;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.top__bar-menu li {
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.top__bar-weather h5{
+    font-weight: 700;
+    font-family: "Times New Roman", serif;
+    font-size: x-large;
+}
+
+
 
 #subscribe-button {
     background-color:  rgb(159, 196, 173);
@@ -43,6 +70,18 @@
     background-color: #e3e3e3;
 }
 
+#smart-search-button {
+    width: 180px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#location-button {
+    background-color: black;
+    color: white;
+}
+
 .main__container {
     max-width: 1000px;
     font-family: 'Inter', sans-serif;
@@ -60,7 +99,17 @@
     font-weight: bold;
 }
 
-.main__container-ad {}
+.main__container-ad-horizontal {
+    margin-top: 85px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+.article__link {
+    text-decoration: none;
+    color: inherit;
+}
 
 .bottom__container {
     font-family: 'arial', serif;
@@ -90,7 +139,7 @@
 }
 
 .bottom__footer {
-    max-width: 1000px;
+    max-width: 800px;
     font-family: Inter, Arial, sans-serif;
 }
 
@@ -106,4 +155,7 @@
     color: rgb(102, 102, 102);
 }
 
+.bottom__footer a {
+    color: inherit;
+}
 
